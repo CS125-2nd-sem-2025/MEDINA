@@ -6,7 +6,7 @@ public class ListNode {
      public static ListNode deserialize(String data) {
         if (data == null || data.equals("[]")) return null;
         
-         String[] values = data.substring(1, data.length() - 1).split(",");
+        String[] values = data.substring(1, data.length() - 1).split(",");
         ListNode head = new ListNode(Integer.parseInt(values[0]));
         ListNode current = head;
 
